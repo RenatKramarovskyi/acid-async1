@@ -1,0 +1,102 @@
+.container{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.prettyButtonGreen{
+
+    padding: 4px;
+    font-size: 15px;
+    background-color: cadetblue;
+    color: antiquewhite;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 2px 0px black;
+    transition: hover 0.1s;
+}
+.prettyButtonGreen:hover {
+    background-color: #427071;
+    color: white;
+}
+.prettyButtonGreen:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+.user_area{
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user_block{
+    display: flex;
+    max-height: 150px;
+    width: 100%;
+    outline: 2px solid cadetblue;
+    border-radius: 12px;
+    gap: 50px;
+    padding: 10px;
+}
+.user_block__img{
+    height: 100%;
+
+}
+.user_block__img img{
+    border-radius: 12px;
+}
+.user_block__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user_block__info p{
+    margin: 0px;
+    position: relative;
+}
+.user_block__info p:nth-of-type(1)::before{
+    content: " ";
+    background-image: url("./img/icons8-name-tag-50.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 100%;
+    bottom: 12%;
+    width: 15px;
+    height: 15px;
+}
+.user_block__info p:nth-of-type(2)::before{
+    content: " ";
+    background-image: url("./img/icons8-gender-50.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 100%;
+    bottom: 12%;
+    width: 15px;
+    height: 15px;
+}
+.user_block__info p:nth-of-type(3)::before{
+    content: " ";
+    background-image: url("./img/icons8-location-50.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 100%;
+    bottom: 12%;
+    width: 15px;
+    height: 15px;
+}
